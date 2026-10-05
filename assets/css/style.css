@@ -13,8 +13,6 @@
   --accent: #2443b8;
   --accent-hover: #1a3290;
   --accent-soft: #e9edfb;
-  --gold: #9a6410;
-  --gold-soft: #fbf1dc;
   --figure-bg: #ffffff;
   --shadow: 0 1px 2px rgba(20, 22, 28, .04), 0 8px 24px -12px rgba(20, 22, 28, .12);
 
@@ -42,8 +40,6 @@
     --accent: #93a9ff;
     --accent-hover: #b6c5ff;
     --accent-soft: #1b2342;
-    --gold: #f0c36a;
-    --gold-soft: #2c2412;
     --figure-bg: #f4f4f2;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -12px rgba(0, 0, 0, .6);
     color-scheme: dark;
@@ -61,8 +57,6 @@
   --accent: #93a9ff;
   --accent-hover: #b6c5ff;
   --accent-soft: #1b2342;
-  --gold: #f0c36a;
-  --gold-soft: #2c2412;
   --figure-bg: #f4f4f2;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -12px rgba(0, 0, 0, .6);
   color-scheme: dark;
@@ -197,7 +191,6 @@ strong { font-weight: 600; }
   font-size: .74rem; font-weight: 600; letter-spacing: .02em; line-height: 1.6;
   background: var(--accent-soft); color: var(--accent);
 }
-.badge-gold { background: var(--gold-soft); color: var(--gold); }
 .badge-muted { background: var(--surface-2); color: var(--muted); }
 
 /* ---------- Highlights ---------- */
@@ -298,6 +291,15 @@ strong { font-weight: 600; }
 .tl-body { margin: 8px 0 0; font-size: .94rem; }
 .tl-body p { margin: 0 0 6px; }
 .tl-body .small { color: var(--muted); font-size: .88rem; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 2px; padding: 0; list-style: none; }
+.facts li {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 4px 11px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--text); font-size: .84rem; line-height: 1.4;
+}
+.facts i { color: var(--accent); font-size: .85em; }
+.facts strong { color: var(--accent); font-weight: 600; }
+
 .tl-list { margin: 0 0 8px; padding-left: 1.1em; }
 .tl-list li { margin-bottom: 4px; }
 .tl-list li::marker { color: var(--faint); }
@@ -343,15 +345,6 @@ strong { font-weight: 600; }
   .tl-item.feature { margin-inline: -21px; }
 }
 
-.callout {
-  display: flex; gap: 12px; align-items: flex-start;
-  margin: 12px 0 0; padding: 12px 14px;
-  background: var(--gold-soft); border-radius: var(--radius-sm);
-  font-size: .9rem; color: var(--text);
-}
-.callout i { color: var(--gold); margin-top: 3px; }
-.callout strong { color: var(--gold); }
-
 /* ---------- Awards ---------- */
 
 .awards { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
@@ -363,7 +356,7 @@ strong { font-weight: 600; }
 }
 .award-icon {
   width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
-  background: var(--gold-soft); color: var(--gold); font-size: 1.1rem;
+  background: var(--accent-soft); color: var(--accent); font-size: 1.1rem;
 }
 .award-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
 .award h3 { margin: 0; font-size: 1.04rem; font-weight: 600; line-height: 1.4; }

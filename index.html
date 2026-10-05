@@ -89,26 +89,23 @@
 
             <div class="bio">
               <p>
-                I am a master's student in Open Informatics (Artificial Intelligence) at the
-                <a href="https://fel.cvut.cz/en">Faculty of Electrical Engineering, Czech Technical University in Prague</a>,
-                a graduate of the <a href="https://prg.ai/minor/">prg.ai Minor</a>, and a research intern in the
-                <a href="https://vrg.fel.cvut.cz/">Visual Recognition Group</a>, working with
+                I am a master's student in Artificial Intelligence at the
+                <a href="https://fel.cvut.cz/en">Faculty of Electrical Engineering, CTU in Prague</a>,
+                and a research intern in the <a href="https://vrg.fel.cvut.cz/">Visual Recognition Group</a>, working with
                 <a href="https://cmp.felk.cvut.cz/~matas/">Prof. Jiří Matas</a> and
                 <a href="https://cmp.felk.cvut.cz/~spetlrad/">Dr. Radim Špetlík</a>.
               </p>
               <p>
-                <strong>Pose graphs.</strong> I work on pose graph initialization and optimization. The project started during my
-                <strong>Student Summer Research Fellowship at ETH Zurich</strong> in the
-                <a href="https://cvg.ethz.ch/">Computer Vision and Geometry Group</a> of
-                <a href="https://people.inf.ethz.ch/marc.pollefeys/">Prof. Marc Pollefeys</a>, and continues in Prof. Matas's group
-                at CTU in close remote collaboration with
+                <strong>Pose graphs.</strong> I work on pose graph initialization and optimization. The project started during
+                my Student Summer Research Fellowship in the <a href="https://cvg.ethz.ch/">Computer Vision and Geometry Group</a>
+                at ETH Zurich and continues at CTU in close collaboration with
                 <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dr. Daniel Barath</a> and
                 <a href="https://zuriabauer.com">Dr. Zuria Bauer</a>.
               </p>
               <p>
-                <strong>Human scent.</strong> Together with analytical chemists, I work on recognising people from
-                the chemistry of their scent: we treat raw GC×GC-TOFMS measurements as multi-channel images and learn
-                representations from them directly, at the scale of terabytes on HPC clusters such as LUMI.
+                <strong>Human scent.</strong> Together with analytical chemists, I work on recognising people from the chemistry
+                of their scent, treating raw GC×GC-TOFMS measurements as multi-channel images and training on terabytes of data
+                on the LUMI supercomputer.
               </p>
             </div>
 
@@ -127,10 +124,10 @@
         <ul class="highlights" aria-label="Highlights" style="margin-top: 40px;">
           <li class="highlight">
             <a class="stretched" href="assets/docs/eth-ssrf-2026-confirmation.pdf">
-              <span class="kpi">Top 0.8%</span>
+              <span class="kpi">Fellow</span>
             </a>
-            <span class="kpi-label">ETH Zurich SSRF 2026</span>
-            <span class="kpi-sub">One of 20 fellows selected from 2,500+ applicants</span>
+            <span class="kpi-label">ETH Zurich (2026)</span>
+            <span class="kpi-sub">1 of 20 selected from 2,500+ applicants (&lt;0.8%)</span>
           </li>
           <li class="highlight">
             <a class="stretched" href="#pub-wacv2026">
@@ -144,7 +141,7 @@
               <span class="kpi">1st</span>
             </a>
             <span class="kpi-label">Rakathon 2025</span>
-            <span class="kpi-sub">Main jury prize at the first Czech oncology hackathon</span>
+            <span class="kpi-sub">Main jury prize at the AI hackathon against cancer</span>
           </li>
           <!-- TODO: uncomment after the official award ceremony
           <li class="highlight">
@@ -188,17 +185,16 @@
             <div>
               <div class="pub-meta">
                 <span class="badge">WACV 2026</span>
-                <span class="badge badge-gold"><i class="fa-solid fa-microphone" aria-hidden="true"></i>Oral</span>
+                <span class="badge">Oral</span>
                 <span class="badge badge-muted">Peer-reviewed</span>
               </div>
               <h3 class="pub-title">Identity Verification from Human Scent using Channel Representation of 2D Gas Chromatography-Mass Spectrometry Data</h3>
               <p class="pub-authors">R. Špetlík, <span class="me">J. Hlavsa</span>, J. Čechová, P. Pojmanová, J. Matas, Š. Urban</p>
               <p class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026, pp. 1471–1480</p>
               <p class="pub-tldr">
-                Raw GC×GC-TOFMS measurements are turned into multi-channel images by compressing each local mass spectrum
-                into a small bank of learned channels, and metric embeddings are learned on top for odor-based identity
-                verification. On 252 individuals and 2,528 raw samples (~7.5&nbsp;TB), the best method reaches ≈53% TPR at
-                5% FPR — without explicit spatial registration.
+                Raw GC×GC-TOFMS measurements become multi-channel images by compressing each local mass spectrum into a few
+                learned channels; metric embeddings on top verify identity from scent. On 252 individuals (2,528 samples,
+                ~7.5&nbsp;TB), the best method reaches ≈53% TPR at 5% FPR without explicit spatial registration.
               </p>
               <div class="pub-links">
                 <a class="btn btn-sm" href="https://cmp.felk.cvut.cz/~spetlrad/Spetlik26-ScentId.pdf"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i>Paper</a>
@@ -248,10 +244,9 @@
               <p class="pub-authors"><span class="me">J. Hlavsa</span>, R. Špetlík, J. Čechová, P. Pojmanová, J. Matas, Š. Urban</p>
               <p class="pub-venue">Scandinavian Conference on Image Analysis (SCIA), Reykjavík, 2025 · LNCS, Springer, pp. 457–470</p>
               <p class="pub-tldr">
-                The first pattern-recognition approach to sex classification that interprets raw GC×GC-TOFMS data as images.
-                Chromatograms are registered into a canonical frame and CNNs learn directly from the full spectral data
-                instead of hand-picked compounds, reaching ≈88% identity-aware cross-validation accuracy on a newly released
-                dataset of 504 samples from 40 individuals.
+                Raw GC×GC-TOFMS data are interpreted as images: chromatograms are registered to a canonical frame and CNNs learn
+                from the full spectral data instead of hand-picked compounds, reaching ≈88% identity-aware cross-validation
+                accuracy on a new dataset of 504 samples from 40 individuals.
               </p>
               <div class="pub-links">
                 <a class="btn btn-sm" href="https://link.springer.com/chapter/10.1007/978-3-031-95911-0_32"><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Paper</a>
@@ -287,7 +282,7 @@
             <div>
               <div class="pub-meta">
                 <span class="badge badge-muted">Bachelor's thesis · 2025</span>
-                <span class="badge badge-gold"><i class="fa-solid fa-award" aria-hidden="true"></i>Dean's Award</span>
+                <span class="badge badge-muted">Dean's Award</span>
               </div>
               <h3 class="pub-title">Computer Vision Methods for Sex Classification and Identity Verification Using Two-Dimensional Gas Chromatography Mass Spectrometry Data</h3>
               <p class="pub-authors"><span class="me">J. Hlavsa</span> · supervised by R. Špetlík</p>
@@ -312,21 +307,20 @@
             <div>
               <h3 class="tl-title">Student Summer Research Fellow (SSRF)</h3>
               <p class="tl-org">ETH Zurich · <a href="https://cvg.ethz.ch/">Computer Vision and Geometry Group</a> · Zurich, Switzerland</p>
+              <ul class="facts">
+                <li><i class="fa-solid fa-users" aria-hidden="true"></i>20 fellows from 2,500+ applicants</li>
+                <li><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>Ongoing remote collaboration</li>
+              </ul>
               <div class="tl-body">
                 <p>
                   Research project: <em>Improving Global-Aware Edge Prioritization for Pose Graph Initialization through
-                  (k,&nbsp;ℓ)-Sparse Graphs</em>. The collaboration continues remotely alongside my ongoing research at CTU.
+                  (k,&nbsp;ℓ)-Sparse Graphs</em>.
                 </p>
                 <p class="small">
                   Group head: <a href="https://people.inf.ethz.ch/marc.pollefeys/">Prof. Marc Pollefeys</a> ·
                   Supervisors: <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dr. Daniel Barath</a>,
                   <a href="https://zuriabauer.com">Dr. Zuria Bauer</a>
                 </p>
-                <div class="callout">
-                  <i class="fa-solid fa-star" aria-hidden="true"></i>
-                  <span><strong>Top 0.8% acceptance.</strong> One of 20 students selected from over 2,500 applicants
-                  to the Student Summer Research Fellowship of the ETH Department of Computer Science.</span>
-                </div>
               </div>
               <div class="tl-actions">
                 <a class="btn btn-sm" href="assets/docs/eth-ssrf-2026-confirmation.pdf"><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certificate of participation</a>
@@ -341,17 +335,16 @@
               <h3 class="tl-title">Research Intern</h3>
               <p class="tl-org"><a href="https://vrg.fel.cvut.cz/">Visual Recognition Group</a>, FEE CTU · Prague, Czech Republic</p>
               <div class="tl-body">
-                <p>Computer vision and data science research. Currently:</p>
+                <p>Computer vision and data science research on two topics:</p>
                 <ul class="tl-list">
                   <li>
-                    <strong>Multidisciplinary research</strong> combining GC×GC-TOFMS data analysis with deep learning,
-                    together with chemists from UCT Prague, with large-scale training on the
+                    <strong>Human scent</strong> — deep learning on GC×GC-TOFMS data, together with chemists from UCT Prague,
+                    with large-scale training on the
                     <a href="https://lumi-supercomputer.eu/human-scent-analysis-with-lumi">LUMI supercomputer</a>.
                   </li>
                   <li>
-                    <strong>Continuing research on pose graph optimization</strong> in close collaboration with Prof. Jiří Matas and
-                    with <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dr. Daniel Barath</a> &amp;
-                    <a href="https://zuriabauer.com">Dr. Zuria Bauer</a> (ETH Zurich).
+                    <strong>Pose graphs</strong> — pose graph optimization in close collaboration with Prof. Jiří Matas and
+                    Dr. Daniel Barath &amp; Dr. Zuria Bauer (ETH Zurich).
                   </li>
                 </ul>
                 <p class="small">
@@ -380,8 +373,8 @@
               <p class="tl-org">Department of Cybernetics, FEE CTU · Prague, Czech Republic</p>
               <div class="tl-body">
                 <p>
-                  Tutorials on deep learning and convolutional neural networks (formerly the Robotics course), Winter Semesters
-                  2025/26 and 2026/27, supervised by Doc. Karel Zimmermann.
+                  Tutorials on deep learning and convolutional neural networks (Winter Semesters 2025/26 and 2026/27),
+                  supervised by Doc. Karel Zimmermann.
                 </p>
               </div>
             </div>
@@ -429,19 +422,18 @@
             <div class="award-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
             <div>
               <div class="award-head">
-                <h3>Winner of Rakathon 2025 — Main Jury Prize</h3>
+                <h3>Rakathon 2025 — Main Jury Prize</h3>
                 <span class="year">April 2025</span>
               </div>
               <p>
-                With team <strong>Pixel Predators</strong>, won first place and the main jury prize at
+                Won the main jury prize with team <strong>Pixel Predators</strong> at
                 <a href="https://www.rakathon.cz">Rakathon</a>, which presents itself as the world's largest AI hackathon against
-                cancer. The 2025 edition, the first Czech hackathon dedicated to oncology, was held at the Second Faculty of
-                Medicine, Charles University, under the auspices of the President of the Czech Republic.
+                cancer. The 2025 edition took place at the Second Faculty of Medicine, Charles University.
               </p>
               <p>
-                Our project <strong>RadioProtect</strong> makes radiotherapy safer: instead of segmenting 2D CT slices, it finds
-                a 3D transformation between a patient's planning and control CT scans, recovering the positioning correction
-                and flagging unexpected changes in irradiated structures.
+                Our project <strong>RadioProtect</strong> makes radiotherapy safer: it finds a 3D transformation between a
+                patient's planning and control CT scans, recovering the positioning correction and flagging unexpected changes
+                in irradiated structures.
               </p>
               <p class="award-team">
                 <i class="fa-solid fa-users" aria-hidden="true"></i>
@@ -451,8 +443,6 @@
               <div class="tl-actions">
                 <a class="btn btn-sm" href="https://www.rakathon.cz"><i class="fa-solid fa-globe" aria-hidden="true"></i>rakathon.cz</a>
                 <a class="btn btn-sm" href="assets/docs/rakathon-2025-press-release-cz.pdf"><i class="fa-regular fa-newspaper" aria-hidden="true"></i>CTU press release (CZ)</a>
-                <a class="btn btn-sm" href="https://feedit.cz/2025/04/23/technologie-z-fel-cvut-meni-lecbu-rakoviny-dve-ceny-pro-studentske-tymy-z-rakathonu-2025/"><i class="fa-regular fa-newspaper" aria-hidden="true"></i>FeedIT.cz</a>
-                <a class="btn btn-sm" href="https://www.technickytydenik.cz/rubriky/denni-zpravodajstvi/technologie-z-fel-cvut-meni-lecbu-rakoviny_61681.html"><i class="fa-regular fa-newspaper" aria-hidden="true"></i>Technický týdeník</a>
               </div>
             </div>
           </li>
@@ -465,8 +455,8 @@
                 <span class="year">2025</span>
               </div>
               <p>
-                Awarded by the Dean of FEE CTU for a <a href="#pub-thesis">bachelor's thesis</a> on predicting sex and verifying
-                identity from GC×GC-TOFMS data of human scent.
+                Awarded by the Dean of FEE CTU for my <a href="#pub-thesis">bachelor's thesis</a> on sex classification and
+                identity verification from GC×GC-TOFMS data of human scent.
               </p>
             </div>
           </li>
@@ -579,20 +569,6 @@
             <div>
               <a href="assets/docs/rakathon-2025-press-release-cz.pdf">Technologie z FEL ČVUT mění léčbu rakoviny. Dvě ceny pro studentské týmy z Rakathonu 2025</a>
               <span class="source">FEE CTU press release · CZ · PDF</span>
-            </div>
-          </li>
-          <li>
-            <span class="when">Apr 2025</span>
-            <div>
-              <a href="https://feedit.cz/2025/04/23/technologie-z-fel-cvut-meni-lecbu-rakoviny-dve-ceny-pro-studentske-tymy-z-rakathonu-2025/">Technologie z FEL ČVUT mění léčbu rakoviny. Dvě ceny pro studentské týmy z Rakathonu 2025</a>
-              <span class="source">FeedIT.cz · CZ</span>
-            </div>
-          </li>
-          <li>
-            <span class="when">2025</span>
-            <div>
-              <a href="https://www.technickytydenik.cz/rubriky/denni-zpravodajstvi/technologie-z-fel-cvut-meni-lecbu-rakoviny_61681.html">Technologie z FEL ČVUT mění léčbu rakoviny</a>
-              <span class="source">Technický týdeník · CZ</span>
             </div>
           </li>
         </ul>
