@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jan Hlavsa</title>
+  <meta name="description" content="Jan Hlavsa — MSc student in Artificial Intelligence at CTU Prague and computer vision researcher in the Visual Recognition Group. Former ETH Zurich SSRF fellow.">
+  <meta name="author" content="Jan Hlavsa">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jan Hlavsa">
+  <meta property="og:description" content="Computer vision & machine learning researcher — CTU Prague, Visual Recognition Group. ETH Zurich SSRF 2026.">
+  <meta property="og:image" content="https://hojula.github.io/assets/img/jan-hlavsa.jpg">
+  <meta property="og:url" content="https://hojula.github.io/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
+
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jan Hlavsa",
+    "url": "https://hojula.github.io/",
+    "image": "https://hojula.github.io/assets/img/jan-hlavsa.jpg",
+    "jobTitle": "Research Intern",
+    "affiliation": { "@type": "Organization", "name": "Czech Technical University in Prague" },
+    "alumniOf": { "@type": "Organization", "name": "Czech Technical University in Prague" },
+    "sameAs": [
+      "https://github.com/hojula",
+      "https://www.linkedin.com/in/hlavsajan",
+      "https://orcid.org/0009-0003-6108-4180"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="#top">Jan Hlavsa</a>
+      <ul class="nav-links">
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#press">Press</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <img class="portrait" src="assets/img/jan-hlavsa.jpg" width="220" height="293" alt="Portrait of Jan Hlavsa">
+
+          <div>
+            <h1>Jan Hlavsa</h1>
+            <p class="tagline">
+              MSc student in Artificial Intelligence<span class="sep">·</span>Computer Vision Researcher<span class="sep">·</span>CTU Prague
+            </p>
+
+            <div class="bio">
+              <p>
+                I am a master's student in Open Informatics (Artificial Intelligence) at the
+                <a href="https://fel.cvut.cz/en">Faculty of Electrical Engineering, Czech Technical University in Prague</a>,
+                a graduate of the <a href="https://prg.ai/minor/">prg.ai Minor</a>, and a research intern in the
+                <a href="https://vrg.fel.cvut.cz/">Visual Recognition Group</a>, working with
+                <a href="https://cmp.felk.cvut.cz/~matas/">Prof. Jiří Matas</a> and
+                <a href="https://cmp.felk.cvut.cz/~spetlrad/">Dr. Radim Špetlík</a>.
+              </p>
+              <p>
+                <strong>Pose graphs.</strong> I work on pose graph initialization and optimization. The project started during my
+                <strong>Student Summer Research Fellowship at ETH Zurich</strong> in the
+                <a href="https://cvg.ethz.ch/">Computer Vision and Geometry Group</a> of
+                <a href="https://people.inf.ethz.ch/marc.pollefeys/">Prof. Marc Pollefeys</a>, and continues in Prof. Matas's group
+                at CTU in close remote collaboration with
+                <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dr. Daniel Barath</a> and
+                <a href="https://zuriabauer.com">Dr. Zuria Bauer</a>.
+              </p>
+              <p>
+                <strong>Human scent.</strong> Together with analytical chemists, I work on recognising people from
+                the chemistry of their scent: we treat raw GC×GC-TOFMS measurements as multi-channel images and learn
+                representations from them directly, at the scale of terabytes on HPC clusters such as LUMI.
+              </p>
+            </div>
+
+            <div class="profiles">
+              <a class="btn" href="assets/docs/jan-hlavsa-cv.pdf"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>CV</a>
+              <a class="btn" href="mailto:jan.hlavsa.2002@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a>
+              <!-- TODO: replace with your Google Scholar profile URL (https://scholar.google.com/citations?user=XXXXXXX) -->
+              <a class="btn" href="https://scholar.google.com/scholar?q=%22Jan+Hlavsa%22+scent"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</a>
+              <a class="btn" href="https://orcid.org/0009-0003-6108-4180"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a>
+              <a class="btn" href="https://github.com/hojula"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/hlavsajan"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="highlights" aria-label="Highlights" style="margin-top: 40px;">
+          <li class="highlight">
+            <a class="stretched" href="assets/docs/eth-ssrf-2026-confirmation.pdf">
+              <span class="kpi">Top 0.8%</span>
+            </a>
+            <span class="kpi-label">ETH Zurich SSRF 2026</span>
+            <span class="kpi-sub">One of 20 fellows selected from 2,500+ applicants</span>
+          </li>
+          <li class="highlight">
+            <a class="stretched" href="#pub-wacv2026">
+              <span class="kpi">Oral</span>
+            </a>
+            <span class="kpi-label">WACV 2026</span>
+            <span class="kpi-sub">Oral &amp; poster presentation in Tucson, AZ</span>
+          </li>
+          <li class="highlight">
+            <a class="stretched" href="#award-rakathon">
+              <span class="kpi">1st</span>
+            </a>
+            <span class="kpi-label">Rakathon 2025</span>
+            <span class="kpi-sub">Main jury prize at the first Czech oncology hackathon</span>
+          </li>
+          <li class="highlight">
+            <a class="stretched" href="#award-hlavka">
+              <span class="kpi">Hlávka</span>
+            </a>
+            <span class="kpi-label">Josef Hlávka Award 2026</span>
+            <span class="kpi-sub">National award for the most talented students</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PUBLICATIONS ================= -->
+    <section class="section" id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+
+        <ul class="pubs">
+
+          <!-- MVA (under review) -->
+          <li class="pub no-figure" id="pub-mva">
+            <div>
+              <div class="pub-meta">
+                <span class="badge badge-muted">MVA · under review</span>
+                <span class="badge">First author</span>
+              </div>
+              <h3 class="pub-title">Identity Verification from Human Scent using Learned Representations of Two-Dimensional Gas Chromatography–Mass Spectrometry Data</h3>
+              <p class="pub-authors"><span class="me">J. Hlavsa</span>, R. Špetlík, J. Čechová, P. Pojmanová, J. Matas, Š. Urban</p>
+              <p class="pub-venue">Submitted to Machine Vision and Applications (MVA), Springer</p>
+            </div>
+          </li>
+
+          <!-- WACV 2026 -->
+          <li class="pub" id="pub-wacv2026">
+            <figure class="pub-figure">
+              <img src="assets/img/teaser-wacv2026.png" width="335" height="283" loading="lazy"
+                   alt="GC×GC-TOFMS intensity heat map with crop-outs and mass spectra of heptacosane and nonacosane">
+            </figure>
+            <div>
+              <div class="pub-meta">
+                <span class="badge">WACV 2026</span>
+                <span class="badge badge-gold"><i class="fa-solid fa-microphone" aria-hidden="true"></i>Oral</span>
+                <span class="badge badge-muted">Peer-reviewed</span>
+              </div>
+              <h3 class="pub-title">Identity Verification from Human Scent using Channel Representation of 2D Gas Chromatography-Mass Spectrometry Data</h3>
+              <p class="pub-authors">R. Špetlík, <span class="me">J. Hlavsa</span>, J. Čechová, P. Pojmanová, J. Matas, Š. Urban</p>
+              <p class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026, pp. 1471–1480</p>
+              <p class="pub-tldr">
+                Raw GC×GC-TOFMS measurements are turned into multi-channel images by compressing each local mass spectrum
+                into a small bank of learned channels, and metric embeddings are learned on top for odor-based identity
+                verification. On 252 individuals and 2,528 raw samples (~7.5&nbsp;TB), the best method reaches ≈53% TPR at
+                5% FPR — without explicit spatial registration.
+              </p>
+              <div class="pub-links">
+                <a class="btn btn-sm" href="https://cmp.felk.cvut.cz/~spetlrad/Spetlik26-ScentId.pdf"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i>Paper</a>
+                <a class="btn btn-sm" href="https://cmp.felk.cvut.cz/~spetlrad/identity_verification_from_human_scent.html"><i class="fa-solid fa-globe" aria-hidden="true"></i>Project page</a>
+                <a class="btn btn-sm" href="https://github.com/radimspetlik/identity_verification_from_human_scent"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+                <a class="btn btn-sm" href="https://vrg.fel.cvut.cz/uct_scent/"><i class="fa-solid fa-database" aria-hidden="true"></i>Dataset</a>
+                <a class="btn btn-sm" href="https://www.youtube.com/watch?v=JJVrgBtqmnE&amp;t=24s"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Talk</a>
+                <a class="btn btn-sm" href="assets/img/poster-wacv2026.png"><i class="fa-regular fa-image" aria-hidden="true"></i>Poster</a>
+                <a class="btn btn-sm" href="https://wacv.thecvf.com/media/wacv-2026/Slides/880.pdf"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>Slides</a>
+                <a class="btn btn-sm" href="https://doi.org/10.1109/WACV61042.2026.00149"><i class="ai ai-doi" aria-hidden="true"></i>IEEE</a>
+                <button class="btn btn-sm" type="button" data-bibtex="bib-wacv2026" aria-expanded="false"><i class="fa-solid fa-quote-right" aria-hidden="true"></i>BibTeX</button>
+              </div>
+              <div class="bibtex" id="bib-wacv2026" hidden>
+                <div class="bibtex-box">
+                  <button class="btn btn-sm copy-btn" type="button"><i class="fa-regular fa-copy" aria-hidden="true"></i>Copy</button>
+<pre><code>@inproceedings{Spetlik2026ScentID,
+  title     = {Identity Verification from Human Scent using Channel
+               Representation of 2D Gas Chromatography-Mass
+               Spectrometry Data},
+  author    = {Spetlik, Radim and Hlavsa, Jan and \v{C}echov\'{a}, Jana
+               and Pojmanov\'{a}, Petra and Matas, Ji\v{r}\'{\i}
+               and Urban, \v{S}t\v{e}p\'{a}n},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on
+               Applications of Computer Vision (WACV)},
+  pages     = {1471--1480},
+  year      = {2026},
+  doi       = {10.1109/WACV61042.2026.00149}
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SCIA 2025 -->
+          <li class="pub" id="pub-scia2025">
+            <figure class="pub-figure">
+              <img src="assets/img/teaser-scia2025.png" width="1400" height="471" loading="lazy"
+                   alt="Pipeline: registration of GC×GC-TOFMS tensor, patch-based training, full-tensor training and inference">
+            </figure>
+            <div>
+              <div class="pub-meta">
+                <span class="badge">SCIA 2025</span>
+                <span class="badge">First author</span>
+                <span class="badge badge-muted">Peer-reviewed</span>
+              </div>
+              <h3 class="pub-title">Sex Classification from Human Scent Using Image Interpretation of 2D Gas Chromatography-Mass Spectrometry Data</h3>
+              <p class="pub-authors"><span class="me">J. Hlavsa</span>, R. Špetlík, J. Čechová, P. Pojmanová, J. Matas, Š. Urban</p>
+              <p class="pub-venue">Scandinavian Conference on Image Analysis (SCIA), Reykjavík, 2025 · LNCS, Springer, pp. 457–470</p>
+              <p class="pub-tldr">
+                The first pattern-recognition approach to sex classification that interprets raw GC×GC-TOFMS data as images.
+                Chromatograms are registered into a canonical frame and CNNs learn directly from the full spectral data
+                instead of hand-picked compounds, reaching ≈88% identity-aware cross-validation accuracy on a newly released
+                dataset of 504 samples from 40 individuals.
+              </p>
+              <div class="pub-links">
+                <a class="btn btn-sm" href="https://link.springer.com/chapter/10.1007/978-3-031-95911-0_32"><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Paper</a>
+                <a class="btn btn-sm" href="https://doi.org/10.26434/chemrxiv-2024-08l0l"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i>Preprint</a>
+                <a class="btn btn-sm" href="assets/docs/poster-scia2025.pdf"><i class="fa-regular fa-image" aria-hidden="true"></i>Poster</a>
+                <a class="btn btn-sm" href="https://github.com/hojula/Sex-Classification-from-Human-Scent"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+                <button class="btn btn-sm" type="button" data-bibtex="bib-scia2025" aria-expanded="false"><i class="fa-solid fa-quote-right" aria-hidden="true"></i>BibTeX</button>
+              </div>
+              <div class="bibtex" id="bib-scia2025" hidden>
+                <div class="bibtex-box">
+                  <button class="btn btn-sm copy-btn" type="button"><i class="fa-regular fa-copy" aria-hidden="true"></i>Copy</button>
+<pre><code>@inproceedings{Hlavsa2025ScentSex,
+  title     = {Sex Classification from Human Scent Using Image
+               Interpretation of 2D Gas Chromatography-Mass
+               Spectrometry Data},
+  author    = {Hlavsa, Jan and Spetlik, Radim and \v{C}echov\'{a}, Jana
+               and Pojmanov\'{a}, Petra and Matas, Ji\v{r}\'{\i}
+               and Urban, \v{S}t\v{e}p\'{a}n},
+  booktitle = {Image Analysis (SCIA 2025)},
+  series    = {Lecture Notes in Computer Science},
+  publisher = {Springer Nature Switzerland},
+  pages     = {457--470},
+  year      = {2025},
+  doi       = {10.1007/978-3-031-95911-0_32}
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Bachelor's thesis -->
+          <li class="pub no-figure" id="pub-thesis">
+            <div>
+              <div class="pub-meta">
+                <span class="badge badge-muted">Bachelor's thesis · 2025</span>
+                <span class="badge badge-gold"><i class="fa-solid fa-award" aria-hidden="true"></i>Dean's Award</span>
+              </div>
+              <h3 class="pub-title">Computer Vision Methods for Sex Classification and Identity Verification Using Two-Dimensional Gas Chromatography Mass Spectrometry Data</h3>
+              <p class="pub-authors"><span class="me">J. Hlavsa</span> · supervised by R. Špetlík</p>
+              <p class="pub-venue">Faculty of Electrical Engineering, Czech Technical University in Prague</p>
+              <div class="pub-links">
+                <a class="btn btn-sm" href="http://hdl.handle.net/10467/122552"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i>Thesis</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">Research &amp; Experience</h2>
+
+        <ol class="timeline">
+          <li class="tl-item feature">
+            <div class="tl-date">Jul – Aug 2026</div>
+            <div>
+              <h3 class="tl-title">Student Summer Research Fellow (SSRF)</h3>
+              <p class="tl-org">ETH Zurich · <a href="https://cvg.ethz.ch/">Computer Vision and Geometry Group</a> · Zurich, Switzerland</p>
+              <div class="tl-body">
+                <p>
+                  Research project: <em>Improving Global-Aware Edge Prioritization for Pose Graph Initialization through
+                  (k,&nbsp;ℓ)-Sparse Graphs</em>. The collaboration continues remotely alongside my ongoing research at CTU.
+                </p>
+                <p class="small">
+                  Group head: <a href="https://people.inf.ethz.ch/marc.pollefeys/">Prof. Marc Pollefeys</a> ·
+                  Supervisors: <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dr. Daniel Barath</a>,
+                  <a href="https://zuriabauer.com">Dr. Zuria Bauer</a>
+                </p>
+                <div class="callout">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <span><strong>Top 0.8% acceptance.</strong> One of 20 students selected from over 2,500 applicants
+                  to the Student Summer Research Fellowship of the ETH Department of Computer Science.</span>
+                </div>
+              </div>
+              <div class="tl-actions">
+                <a class="btn btn-sm" href="assets/docs/eth-ssrf-2026-confirmation.pdf"><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certificate of participation</a>
+                <a class="btn btn-sm" href="https://www.inf.ethz.ch/ssrf"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>About SSRF</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2023 – present</div>
+            <div>
+              <h3 class="tl-title">Research Intern</h3>
+              <p class="tl-org"><a href="https://vrg.fel.cvut.cz/">Visual Recognition Group</a>, FEE CTU · Prague, Czech Republic</p>
+              <div class="tl-body">
+                <p>Computer vision and data science research. Currently:</p>
+                <ul class="tl-list">
+                  <li>
+                    <strong>Multidisciplinary research</strong> combining GC×GC-TOFMS data analysis with deep learning,
+                    together with chemists from UCT Prague, with large-scale training on the
+                    <a href="https://lumi-supercomputer.eu/human-scent-analysis-with-lumi">LUMI supercomputer</a>.
+                  </li>
+                  <li>
+                    <strong>Continuing research on pose graph optimization</strong> in close collaboration with Prof. Jiří Matas and
+                    with <a href="https://cvg.ethz.ch/team/Dr-Daniel-Bela-Barath">Dr. Daniel Barath</a> &amp;
+                    <a href="https://zuriabauer.com">Dr. Zuria Bauer</a> (ETH Zurich).
+                  </li>
+                </ul>
+                <p class="small">
+                  Supervisors: <a href="https://cmp.felk.cvut.cz/~matas/">Prof. Jiří Matas</a>,
+                  <a href="https://cmp.felk.cvut.cz/~spetlrad/">Dr. Radim Špetlík</a>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2026 – present</div>
+            <div>
+              <h3 class="tl-title">Teaching Assistant — Optimization</h3>
+              <p class="tl-org">Department of Cybernetics, FEE CTU · Prague, Czech Republic</p>
+              <div class="tl-body">
+                <p>Tutorials in Summer Semester 2025/26 and Winter Semester 2026/27, supervised by Doc. Tomáš Werner.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2025 – present</div>
+            <div>
+              <h3 class="tl-title">Teaching Assistant — Deep Learning Essentials</h3>
+              <p class="tl-org">Department of Cybernetics, FEE CTU · Prague, Czech Republic</p>
+              <div class="tl-body">
+                <p>
+                  Tutorials on deep learning and convolutional neural networks (formerly the Robotics course), Winter Semesters
+                  2025/26 and 2026/27, supervised by Doc. Karel Zimmermann.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2026 – present</div>
+            <div>
+              <h3 class="tl-title">Academic Senator</h3>
+              <p class="tl-org">Academic Senate of FEE CTU · Prague, Czech Republic</p>
+              <div class="tl-body">
+                <p>Elected student representative in the Academic Senate of the Faculty of Electrical Engineering.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= AWARDS ================= -->
+    <section class="section" id="awards">
+      <div class="container">
+        <h2 class="section-title">Awards</h2>
+
+        <ul class="awards">
+          <li class="award" id="award-hlavka">
+            <div class="award-icon"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
+            <div>
+              <div class="award-head">
+                <h3>Josef Hlávka Award</h3>
+                <span class="year">2026</span>
+              </div>
+              <p>
+                Prestigious national award presented by the
+                <a href="https://www.hlavkovanadace.cz/">Josef, Marie and Zdeňka Hlávka Foundation</a> to the most talented
+                university students and young researchers. Awarded on the nomination of the Rector of CTU in Prague in
+                recognition of exceptional academic achievements and research contributions.
+              </p>
+            </div>
+          </li>
+
+          <li class="award" id="award-rakathon">
+            <div class="award-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+            <div>
+              <div class="award-head">
+                <h3>Winner of Rakathon 2025 — Main Jury Prize</h3>
+                <span class="year">April 2025</span>
+              </div>
+              <p>
+                With team <strong>Pixel Predators</strong>, won first place and the main jury prize at
+                <a href="https://www.rakathon.cz">Rakathon</a>, which presents itself as the world's largest AI hackathon against
+                cancer. The 2025 edition, the first Czech hackathon dedicated to oncology, was held at the Second Faculty of
+                Medicine, Charles University, under the auspices of the President of the Czech Republic.
+              </p>
+              <p>
+                Our project <strong>RadioProtect</strong> makes radiotherapy safer: instead of segmenting 2D CT slices, it finds
+                a 3D transformation between a patient's planning and control CT scans, recovering the positioning correction
+                and flagging unexpected changes in irradiated structures.
+              </p>
+              <p class="award-team">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                <span><strong>Team:</strong> Jan Hlavsa (CTU Prague), Filip Oliver Klimoszek (ETH Zurich),
+                David Korčák (ETH Zurich), Barbora Čurdová (UCT Prague)</span>
+              </p>
+              <div class="tl-actions">
+                <a class="btn btn-sm" href="https://www.rakathon.cz"><i class="fa-solid fa-globe" aria-hidden="true"></i>rakathon.cz</a>
+                <a class="btn btn-sm" href="assets/docs/rakathon-2025-press-release-cz.pdf"><i class="fa-regular fa-newspaper" aria-hidden="true"></i>CTU press release (CZ)</a>
+                <a class="btn btn-sm" href="https://feedit.cz/2025/04/23/technologie-z-fel-cvut-meni-lecbu-rakoviny-dve-ceny-pro-studentske-tymy-z-rakathonu-2025/"><i class="fa-regular fa-newspaper" aria-hidden="true"></i>FeedIT.cz</a>
+                <a class="btn btn-sm" href="https://www.technickytydenik.cz/rubriky/denni-zpravodajstvi/technologie-z-fel-cvut-meni-lecbu-rakoviny_61681.html"><i class="fa-regular fa-newspaper" aria-hidden="true"></i>Technický týdeník</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="award" id="award-dean">
+            <div class="award-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+            <div>
+              <div class="award-head">
+                <h3>Dean's Award for an Outstanding Bachelor's Thesis</h3>
+                <span class="year">2025</span>
+              </div>
+              <p>
+                Awarded by the Dean of FEE CTU for a <a href="#pub-thesis">bachelor's thesis</a> on predicting sex and verifying
+                identity from GC×GC-TOFMS data of human scent.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= TALKS ================= -->
+    <section class="section" id="talks">
+      <div class="container">
+        <h2 class="section-title">Talks, Conferences &amp; Schools</h2>
+
+        <ol class="timeline">
+          <li class="tl-item">
+            <div class="tl-date">Mar 2026</div>
+            <div>
+              <h3 class="tl-title">Oral &amp; poster presentation — WACV 2026</h3>
+              <p class="tl-org">IEEE/CVF Winter Conference on Applications of Computer Vision · Tucson, Arizona, USA</p>
+              <div class="tl-body"><p>Presented our research on identity verification from GC×GC-TOFMS data of human scent.</p></div>
+              <div class="talk-media">
+                <a class="talk-video" href="https://www.youtube.com/watch?v=JJVrgBtqmnE&amp;t=24s">
+                  <img src="https://i.ytimg.com/vi/JJVrgBtqmnE/hqdefault.jpg" width="480" height="360" loading="lazy"
+                       alt="Video thumbnail: WACV 2026 talk on identity verification from human scent">
+                  <span class="play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                </a>
+                <a class="talk-poster" href="assets/img/poster-wacv2026.png">
+                  <img src="assets/img/poster-wacv2026-preview.jpg" width="1600" height="800" loading="lazy"
+                       alt="WACV 2026 poster: Identity Verification from Human Scent using Channel Representation of 2D GC-MS Data">
+                  <span class="label" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i>Poster</span>
+                </a>
+              </div>
+              <div class="tl-actions">
+                <a class="btn btn-sm" href="https://www.youtube.com/watch?v=JJVrgBtqmnE&amp;t=24s"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Watch the talk</a>
+                <a class="btn btn-sm" href="assets/img/poster-wacv2026.png"><i class="fa-regular fa-image" aria-hidden="true"></i>Poster</a>
+                <a class="btn btn-sm" href="https://wacv.thecvf.com/media/wacv-2026/Slides/880.pdf"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>Slides</a>
+                <a class="btn btn-sm" href="https://wacv.thecvf.com/virtual/2026/oral/1168"><i class="fa-solid fa-microphone" aria-hidden="true"></i>Oral session</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">Jun 2025</div>
+            <div>
+              <h3 class="tl-title">Poster — SCIA 2025</h3>
+              <p class="tl-org">Scandinavian Conference on Image Analysis · Reykjavík, Iceland</p>
+              <div class="tl-body"><p>Poster on sex classification and identity verification from human scent.</p></div>
+              <div class="talk-media">
+                <a class="talk-poster portrait" href="assets/docs/poster-scia2025.pdf">
+                  <img src="assets/img/poster-scia2025-preview.jpg" width="990" height="1400" loading="lazy"
+                       alt="SCIA 2025 poster: Sex Classification from Human Scent Using Image Interpretation of 2D GC-MS Data">
+                  <span class="label" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-plus"></i>Poster</span>
+                </a>
+              </div>
+              <div class="tl-actions">
+                <a class="btn btn-sm" href="assets/docs/poster-scia2025.pdf"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i>Poster (PDF)</a>
+                <a class="btn btn-sm" href="https://link.springer.com/chapter/10.1007/978-3-031-95911-0_32"><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Paper</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2025</div>
+            <div>
+              <h3 class="tl-title">Speaker — Multidimensional Chromatography Workshop (MDCW 2025)</h3>
+              <p class="tl-org">MDCW · Liège, Belgium</p>
+              <div class="tl-body">
+                <p>
+                  <em>Sex and person identity recognition from GC×GC analysis of scent samples</em> — a short talk on applying
+                  computer vision methods to GC×GC-TOFMS data.
+                </p>
+              </div>
+              <a class="talk-video" href="https://www.youtube.com/watch?v=eWlEmH635ag&amp;t=3s">
+                <img src="https://i.ytimg.com/vi/eWlEmH635ag/hqdefault.jpg" width="480" height="360" loading="lazy"
+                     alt="Video thumbnail: MDCW 2025 talk on sex and person identity recognition from scent samples">
+                <span class="play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+              </a>
+              <div class="tl-actions">
+                <a class="btn btn-sm" href="https://www.youtube.com/watch?v=eWlEmH635ag&amp;t=3s"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Watch the talk</a>
+                <a class="btn btn-sm" href="https://labrulez.com/pdf/FL_08_HLAVSA_FL_08_68798bcae3.pdf"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>Slides</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2024</div>
+            <div>
+              <h3 class="tl-title">Participant — Vision and Sports Summer School</h3>
+              <p class="tl-org">Organised by Vittorio Ferrari (Synthesia), Ondřej Chum and Jiří Matas (CTU Prague)</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PRESS ================= -->
+    <section class="section" id="press">
+      <div class="container">
+        <h2 class="section-title">In the Press</h2>
+
+        <ul class="press-list">
+          <li>
+            <span class="when">Apr 2025</span>
+            <div>
+              <a href="https://lumi-supercomputer.eu/human-scent-analysis-with-lumi">Human scent analysis with LUMI</a>
+              <span class="source">LUMI supercomputer · EN · feature on our human scent research</span>
+            </div>
+          </li>
+          <li>
+            <span class="when">Apr 2025</span>
+            <div>
+              <a href="assets/docs/rakathon-2025-press-release-cz.pdf">Technologie z FEL ČVUT mění léčbu rakoviny. Dvě ceny pro studentské týmy z Rakathonu 2025</a>
+              <span class="source">FEE CTU press release · CZ · PDF</span>
+            </div>
+          </li>
+          <li>
+            <span class="when">Apr 2025</span>
+            <div>
+              <a href="https://feedit.cz/2025/04/23/technologie-z-fel-cvut-meni-lecbu-rakoviny-dve-ceny-pro-studentske-tymy-z-rakathonu-2025/">Technologie z FEL ČVUT mění léčbu rakoviny. Dvě ceny pro studentské týmy z Rakathonu 2025</a>
+              <span class="source">FeedIT.cz · CZ</span>
+            </div>
+          </li>
+          <li>
+            <span class="when">2025</span>
+            <div>
+              <a href="https://www.technickytydenik.cz/rubriky/denni-zpravodajstvi/technologie-z-fel-cvut-meni-lecbu-rakoviny_61681.html">Technologie z FEL ČVUT mění léčbu rakoviny</a>
+              <span class="source">Technický týdeník · CZ</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <ol class="timeline">
+          <li class="tl-item">
+            <div class="tl-date">2025 – 2027 (exp.)</div>
+            <div>
+              <h3 class="tl-title">Ing. (MSc) in Open Informatics — Artificial Intelligence</h3>
+              <p class="tl-org">Faculty of Electrical Engineering, CTU Prague</p>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2022 – 2025</div>
+            <div>
+              <h3 class="tl-title">Bc. (BSc) in Open Informatics — Artificial Intelligence</h3>
+              <p class="tl-org">Faculty of Electrical Engineering, CTU Prague</p>
+              <div class="tl-body">
+                <p>Graduated with a weighted grade average of <strong>1.0</strong> (the best possible). Thesis awarded the Dean's Award.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2024 – 2025</div>
+            <div>
+              <h3 class="tl-title"><a href="https://prg.ai/minor/">prg.ai Minor</a></h3>
+              <p class="tl-org"><a href="https://prg.ai/">prg.ai</a> · CTU Prague &amp; Charles University</p>
+              <div class="tl-body">
+                <p>
+                  Completed the prg.ai Minor, an interuniversity AI programme run by <a href="https://prg.ai/">prg.ai</a>
+                  that combines the best computer science and AI courses of CTU and Charles University.
+                </p>
+              </div>
+              <div class="tl-actions">
+                <a class="btn btn-sm" href="https://prg.ai/minor/"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>prg.ai Minor</a>
+                <a class="btn btn-sm" href="https://prg.ai/"><i class="fa-solid fa-globe" aria-hidden="true"></i>prg.ai</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-date">2014 – 2022</div>
+            <div>
+              <h3 class="tl-title">High School Diploma</h3>
+              <p class="tl-org">Gymnázium Jana Palacha · Mělník, Czech Republic</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS / MISC ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; More</h2>
+
+        <div class="cols">
+          <div class="panel">
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li class="strong">Python</li>
+              <li class="strong">C</li>
+              <li>C++</li>
+              <li>Julia</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>PostgreSQL</li>
+              <li>Haskell</li>
+            </ul>
+            <h3 style="margin-top: 20px;">Machine learning</h3>
+            <ul class="tags">
+              <li class="strong">PyTorch</li>
+              <li>Deep Learning</li>
+              <li>Computer Vision</li>
+              <li>Data Analysis</li>
+              <li>HPC / SLURM</li>
+            </ul>
+            <h3 style="margin-top: 20px;">Tools</h3>
+            <ul class="tags">
+              <li>Linux</li>
+              <li>Git</li>
+              <li>LaTeX</li>
+              <li>Singularity</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Languages</h3>
+            <dl>
+              <dt>Czech</dt><dd>Native</dd>
+              <dt>English</dt><dd>Fluent</dd>
+              <dt>French</dt><dd>Intermediate</dd>
+            </dl>
+
+            <h3 style="margin-top: 20px;">Memberships</h3>
+            <p style="margin: 0; font-size: .94rem;"><a href="https://upe.acm.org/">Upsilon Pi Epsilon</a> (UPE) Honor Society</p>
+
+            <h3 style="margin-top: 20px;">Outside research</h3>
+            <p style="margin: 0; font-size: .94rem;">Saxophone · Taekwondo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-card">
+          <p>
+            Feel free to reach out about research, collaborations or anything related to computer vision and machine learning.<br>
+            <a class="email" href="mailto:jan.hlavsa.2002@gmail.com">jan.hlavsa.2002@gmail.com</a>
+          </p>
+          <div class="profiles" style="margin-top: 0;">
+            <a class="btn" href="assets/docs/jan-hlavsa-cv.pdf"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>CV</a>
+            <a class="btn" href="https://github.com/hojula"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/hlavsajan"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+            <a class="btn" href="https://orcid.org/0009-0003-6108-4180"><i class="ai ai-orcid" aria-hidden="true"></i>ORCID</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Jan Hlavsa</span>
+      <span>Last updated October 2026</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
