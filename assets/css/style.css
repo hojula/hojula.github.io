@@ -203,7 +203,8 @@ strong { font-weight: 600; }
 /* ---------- Highlights ---------- */
 
 .highlights {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+  /* One equal column per card, so the row stays full whether there are 3 or 4 highlights. */
+  display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 12px;
   margin: 8px 0 0; padding: 0; list-style: none;
 }
 .highlight {
@@ -424,7 +425,8 @@ strong { font-weight: 600; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {
-  .highlights { grid-template-columns: repeat(2, 1fr); }
+  .highlights { grid-auto-flow: row; grid-template-columns: repeat(2, 1fr); }
+  .highlight:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .pub { grid-template-columns: 1fr; }
   .pub-figure img { max-height: 220px; }
   .cols { grid-template-columns: 1fr; }
